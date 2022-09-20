@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Inputs</title>
+</head>
+
+<body>
+
+<h3></h3>
+
+  <table>
+    <label for="site-search">Search the site:</label>
+    <input type="search" id="site-search" name="q">
+    <button>Search</button>
+    <p>
+      <input class="favorite styled" type="button" value="Add to favorites">
+    <p>
+      <label for="start">Start date:</label>
+
+      <input type="date" id="start" name="trip-start" value="1950-01-01" min="1950-01-01" max="2050-12-31">
+    <p>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <p>
+
+    <div>
+      <label for="pass">Password (8 characters minimum):</label>
+      <input type="password" id="pass" name="password" minlength="8" required>
+    </div>
+    <p>
+
+      <input type="submit" value="Sign in">
+    <p>
+
+      <label for="url">Enter an https:// URL:</label>
+
+      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required><p>
+        <p>Audio settings:</p>
+
+  <div>
+    <input type="range" id="volume" name="volume"
+           min="0" max="11">
+    <label for="volume">Volume</label>
+  </div>
+
+  <div>
+    <input type="range" id="cowbell" name="cowbell"
+           min="0" max="100" value="90" step="10">
+    <label for="cowbell">Cowbell</label>
+  </div>
+
+
+  </table>
+</body>
+
+</html>
